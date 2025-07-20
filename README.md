@@ -10,7 +10,7 @@ In data warehousing and analytics, tracking historical changes in dimension data
 -Efficiently identifies changed records in large datasets
 -Maintains referential integrity while updating dimensions
 
-# Use Case
+## Use Case
 A organization maintains employee data in a data warehouse
 
 Business needs require tracking all historical changes to employee records (salary changes, department transfers, etc.)
@@ -19,7 +19,7 @@ Current implementation overwrites records, losing historical context
 
 Need to implement SCD Type 2 to preserve complete change history
 
-# Task
+## Task
 Design and implement a PySpark-based SCD Type 2 solution that:
 
 -Detects changes between source and target data
@@ -28,7 +28,7 @@ Design and implement a PySpark-based SCD Type 2 solution that:
 -Flags active records appropriately
 -Handles new records and updates efficiently
 
-# Action
+## Action
 Data Setup
 
 -Created sample source and target DataFrames with employee data
@@ -48,7 +48,7 @@ Validation (Verified correct handling of):
 -Changed records (updates with history preservation)
 -Unchanged records (no action needed)
 
-# Result
+## Result
 
 -Successful implementation of SCD Type 2 in PySpark
 -Complete historical tracking of employee dimension changes
